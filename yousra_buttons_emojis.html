@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>شكر خاص ليسرى</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #ffe6f0, #ffe);
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 40px;
+      color: #4a0033;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+    button {
+      font-size: 2.5em;
+      padding: 20px;
+      margin: 15px;
+      border: none;
+      border-radius: 50%;
+      background-color: #ff6699;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 80px;
+      height: 80px;
+    }
+    button:hover {
+      background-color: #e6005c;
+      transform: scale(1.1);
+    }
+    .section {
+      display: none;
+      margin-top: 40px;
+      padding: 30px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    .visible {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💖 إهداء خاص ليسرى 💖</h1>
+
+  <button onclick="showSection('dua')">🎀</button>
+  <button onclick="showSection('shukr')">🎁</button>
+  <button onclick="showSection('surprise')">🌟</button>
+
+  <div id="dua" class="section">
+    <h2>🌟 دعاء لكِ يسرى</h2>
+    <p>أسأل الله أن يرزقك التوفيق والسعادة في كل خطوة تخطينها، وأن يفتح لك أبواب الخير والنجاح أينما كنتِ. 🌹</p>
+  </div>
+
+  <div id="shukr" class="section">
+    <h2>💖 من أعماق القلب</h2>
+    <p>شكراً يسرى لخالتي على كل ما قدمتهِ لي من حب، دعم، ووقوف بجانبي في كل الأوقات. أنتِ كنز لا يُعوّض. 💌</p>
+  </div>
+
+  <div id="surprise" class="section">
+    <h2>🎉 لمسة مفاجأة</h2>
+    <p>لو كنتِ وردة، لكنتِ الأجمل بين البساتين. ولو كنتِ لحناً، لكنتِ الأنقى بين الأوتار. أحبكِ بتقدير واحترام عظيم. 🌷</p>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('visible'));
+      document.getElementById(id).classList.add('visible');
+    }
+  </script>
+</body>
+</html>
